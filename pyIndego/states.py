@@ -188,6 +188,8 @@ class GenericData:
 class Location:
     """Location Class."""
 
+    name: str = None
+    country: str = None
     latitude: float = None
     longitude: float = None
     timezone: str = None
@@ -218,6 +220,7 @@ class Config:
     wire_id: int = None
     bump_sensitivity: int = None
     alarm_mode: bool = None
+    mowing_mode: int = None
 
 
 @dataclass
